@@ -1,19 +1,123 @@
- <script>
-  function checkPassword() {
-   var password = document.getElementById("passwordBox");
-   var passwordText = password.value;
-   if(passwordText == "LegoBuilders") {
-    return true;
-   }
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>PracticaLego</title>
+
+        <style>
+
+        body {
+
+            margin:0;
+            background-color:#5AB9EA;
+            font-family: Trebuchet MS;
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .header {
+            text-align: center;
+            font-size: 40px;
+            background-color: #84CEEB;
+            border: solid black;
+            margin:10px;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .banner {
+            background-size: cover;
+            background-color: #84CEEB;
+            color: white;
+            height:8px;
+            text-align: center;
+            font-size: 25px;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            border: solid black;
+            margin:10px;
+            text-decoration: none;
+        }
+        
+        .title {
+            font-size:20pt;
+            margin: 10px;
+            color: white;
+            height: 70pt;
+        }
+
+        .center {
+
+            text-align:center;
+            text-decoration: none;
+        }
+
+        .body {
+
+            border: 6px dotted BLACK;
+            font-size: 14pt;
+            padding: 10px;
+            margin:20px;
+            text-align: center;
+            text-decoration:none;
+        }
+
+        .image-center{
+
+            margin : 50px;
+            margin-left:auto;
+            margin-right:auto;
+            display:block;
+            color: white;
+            font-size:10pt;
+        }
+
+        a{text-decoration:none;}
+        </style>
+        <script>
+           function checkPassword() {
+           var password = document.getElementById("passwordBox");
+           var passwordText = password.value;
+           if(passwordText == "LegoBuilders") {
+           return true;
+         }
    alert("Access denied! Incorrect password!");
    return false;
    }
  </script>
-</head>
-<body>
- <p style="font-size: 30pt;">THE MONK DIAMOND DISCOVERY</p>
- <p>Please enter the password to view this website.</p>
- <p>Password:<input id="passwordBox" type="password"/></p>
- <a href="home.html" onclick="return checkPassword();">
-  Submit
- </a>
+
+    </head>
+
+    <body>
+
+        <div class="header">
+
+            <p><b>PracticaLego</b></p>
+
+        </div>
+        
+        <div class="banner">
+    <a href="home.html">Home</a> | <a href="downloads.html">Downloads</a>
+</div>
+
+        <div class="title center">
+
+            <p><b>The best practical projects for your desk all made from Lego!</b></p>
+
+        </div>
+            <div class="body">
+                 <p>Please enter the password to view this website.</p>
+                 <p>Password:<input id="passwordBox" type="password"/></p>
+                 <a href="home.html" onclick="return checkPassword();">
+                    Submit
+                 </a>
+                   
+               
+        </div>
+            
+
+    </body>
+
+</html>
